@@ -1,0 +1,10 @@
+db:
+  image: mysql:latest
+  container_name: godocker
+  environment:
+    MYSQL_USER: docker
+    MYSQL_ROOT_PASSWORD: test123
+    MYSQL_PASSWORD: test123
+    MYSQL_DATABASE: cursogo
+  ports:
+    - "3306:3306"
